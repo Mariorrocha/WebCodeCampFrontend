@@ -1,0 +1,140 @@
+/* ===========================
+Estilos de la seccion testimonials
+==============================*/
+.testimonials {
+    background-color: #f2f2f2;
+    padding: 6vh 0;
+  }
+  
+  .testimonials-content {
+    margin: 0 auto;
+    max-width: 320px;
+    padding: 0 4vw;
+  }
+  .testimonials-content h2 {
+    margin-bottom: 5vh;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .testimonial-text {
+    border: 1px solid #cdcdcd;
+    margin-bottom: 5vh;
+    padding: 2vh;
+  }
+  .testimonial-text:last-child {
+    margin-bottom: 0;
+  }
+  .testimonial-text p i {
+    color: #fd4918;
+  }
+  
+  .testimonial-person-data {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .testimonial-person-data .testimonial-person-photo {
+    height: 80px;
+    width: 30%;
+  }
+  .testimonial-person-data .testimonial-person-photo img {
+    height: inherit;
+    object-fit: cover;
+    width: 100%;
+  }
+  .testimonial-person-data .testimonial-person-name {
+    width: 60%;
+  }
+  .testimonial-person-data .testimonial-person-name h3 {
+    color: #fd4918;
+  }
+  
+  /*=======================================================
+  ESTILOS For small screen devices, like phones, held in 
+  landscape mode. 480px/30em
+  =========================================================*/
+  @media only screen and (min-width: 30em) {
+    .testimonials-content {
+      margin: 0 auto;
+      max-width: 350px;
+      padding: 0;
+    }
+  
+    .testimonial-person-data .testimonial-person-photo {
+      height: 110px;
+    }
+  }
+  /*=========================================================
+  ESTILOS Smaller tablets, like the Amazon Kindle (600×800) 
+  and Barnes & Noble Nook (600×1024), held in portrait mode. 
+  600px/37.5em
+  ===========================================================*/
+  @media only screen and (min-width: 37.5em) {
+    .testimonials-content {
+      margin: 0 auto;
+      max-width: 400px;
+      padding: 0;
+    }
+  }
+  /*=========================================================
+  ESTILOS Ten-inch tablets like the iPad (768×1024) held in
+  portrait mode. 768px/48em
+  ===========================================================*/
+  @media only screen and (min-width: 48em) {
+    .testimonials-content {
+      margin: 0 auto;
+      max-width: 750px;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+    }
+    .testimonials-content h2 {
+      width: 100%;
+    }
+  
+    .testimonial-text {
+      margin-bottom: 0;
+      width: 32%;
+    }
+  
+    .testimonial-person-data .testimonial-person-photo {
+      width: 45%;
+    }
+    .testimonial-person-data .testimonial-person-name {
+      width: 50%;
+    }
+  }
+  /*=========================================================
+  ESTILOS Tablets like the iPad (1024×768) held in landscape
+  mode, as well as certain laptop, netbook, and desktop 
+  displays. 1024px/64em
+  ===========================================================*/
+  @media only screen and (min-width: 64em) {
+    .testimonials-content {
+      margin: 0 auto;
+      max-width: 900px;
+      padding: 0;
+    }
+  }
+  /*=========================================================
+  ESTILOS For widescreen displays, primarily laptop and
+  desktop browsers. 1200px/75em
+  ===========================================================*/
+  @media only screen and (min-width: 75em) {
+    .testimonials-content {
+      margin: 0 auto;
+      max-width: 1100px;
+      padding: 0;
+    }
+  
+    .testimonial-person-data .testimonial-person-photo {
+      width: 35%;
+    }
+    .testimonial-person-data .testimonial-person-name {
+      width: 60%;
+    }
+  }

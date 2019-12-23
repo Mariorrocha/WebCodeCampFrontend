@@ -1,0 +1,90 @@
+/* ===========================
+Estilos del event presentation
+==============================*/
+#event-presentation {
+    background-color: #f2f2f2;
+    padding: 6vh 0;
+  }
+  
+  .event-presentation-content {
+    margin: 0 auto;
+    max-width: 320px;
+    padding: 4vw;
+  }
+  .event-presentation-content h2 {
+    font-size: 20px;
+    margin-bottom: 2vh;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .event-presentation-content p {
+    text-align: center;
+  }
+  
+  /*=======================================================
+  ESTILOS For small screen devices, like phones, held in 
+  landscape mode. 480px/30em
+  =========================================================*/
+  @media only screen and (min-width: 30em) {
+    .event-presentation-content {
+      margin: 0 auto;
+      max-width: 450px;
+      padding: 0;
+    }
+    .event-presentation-content h2 {
+      font-size: 25px;
+    }
+  }
+  /*=========================================================
+  ESTILOS Smaller tablets, like the Amazon Kindle (600×800) 
+  and Barnes & Noble Nook (600×1024), held in portrait mode. 
+  600px/37.5em
+  ===========================================================*/
+  @media only screen and (min-width: 37.5em) {
+    .event-presentation-content {
+      margin: 0 auto;
+      max-width: 550px;
+      padding: 0;
+    }
+    .event-presentation-content h2 {
+      font-size: 30px;
+    }
+  }
+  /*=========================================================
+  ESTILOS Ten-inch tablets like the iPad (768×1024) held in
+  portrait mode. 768px/48em
+  ===========================================================*/
+  @media only screen and (min-width: 48em) {
+    .event-presentation-content {
+      margin: 0 auto;
+      max-width: 750px;
+      padding: 0;
+    }
+  }
+  /*=========================================================
+  ESTILOS Tablets like the iPad (1024×768) held in landscape
+  mode, as well as certain laptop, netbook, and desktop 
+  displays. 1024px/64em
+  ===========================================================*/
+  @media only screen and (min-width: 64em) {
+    #event-presentation {
+      padding: 15vh 0;
+    }
+  
+    .event-presentation-content {
+      margin: 0 auto;
+      max-width: 900px;
+      padding: 0;
+    }
+  }
+  /*=========================================================
+  ESTILOS For widescreen displays, primarily laptop and
+  desktop browsers. 1200px/75em
+  ===========================================================*/
+  @media only screen and (min-width: 75em) {
+    .event-presentation-content {
+      margin: 0 auto;
+      max-width: 1100px;
+      padding: 0;
+    }
+  }

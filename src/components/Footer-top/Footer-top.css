@@ -1,0 +1,122 @@
+/* ===========================
+Estilos de la seccion footer-top
+==============================*/
+.footer-top {
+    background-color: #353535;
+    padding: 6vh 0;
+  }
+  
+  .footer-content {
+    margin: 0 auto;
+    max-width: 320px;
+    padding: 0 4vw;
+  }
+  
+  .box {
+    color: white;
+  }
+  .box h2 {
+    margin-bottom: 2vh;
+    text-transform: uppercase;
+  }
+  .box h2 span {
+    color: #fd4918;
+  }
+  
+  .footer-socia-media-nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4vh;
+    width: 100%;
+  }
+  .footer-socia-media-nav a {
+    color: white;
+    font-size: 30px;
+  }
+  
+  /*=======================================================
+  ESTILOS For small screen devices, like phones, held in 
+  landscape mode. 480px/30em
+  =========================================================*/
+  @media only screen and (min-width: 30em) {
+    .footer-content {
+      margin: 0 auto;
+      max-width: 400px;
+      padding: 0;
+    }
+  
+    .footer-socia-media-nav a {
+      color: white;
+      font-size: 45px;
+    }
+  }
+  /*=========================================================
+  ESTILOS Smaller tablets, like the Amazon Kindle (600×800) 
+  and Barnes & Noble Nook (600×1024), held in portrait mode. 
+  600px/37.5em
+  ===========================================================*/
+  @media only screen and (min-width: 37.5em) {
+    .footer-content {
+      margin: 0 auto;
+      max-width: 550px;
+      padding: 0;
+    }
+  
+    .box {
+      margin-bottom: 4vh;
+    }
+  }
+  /*=========================================================
+  ESTILOS Ten-inch tablets like the iPad (768×1024) held in
+  portrait mode. 768px/48em
+  ===========================================================*/
+  @media only screen and (min-width: 48em) {
+    .footer-top {
+      padding: 10vh 0;
+    }
+  
+    .footer-content {
+      margin: 0 auto;
+      max-width: 700px;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .box {
+      margin-bottom: 0;
+      width: 48%;
+    }
+  }
+  /*=========================================================
+  ESTILOS Tablets like the iPad (1024×768) held in landscape
+  mode, as well as certain laptop, netbook, and desktop 
+  displays. 1024px/64em
+  ===========================================================*/
+  @media only screen and (min-width: 64em) {
+    .footer-content {
+      margin: 0 auto;
+      max-width: 900px;
+      padding: 0;
+    }
+  
+    .footer-socia-media-nav {
+      margin-top: 6vh;
+    }
+    .footer-socia-media-nav a {
+      font-size: 50px;
+    }
+  }
+  /*=========================================================
+  ESTILOS For widescreen displays, primarily laptop and
+  desktop browsers. 1200px/75em
+  ===========================================================*/
+  @media only screen and (min-width: 75em) {
+    .footer-content {
+      margin: 0 auto;
+      max-width: 1100px;
+      padding: 0;
+    }
+  }

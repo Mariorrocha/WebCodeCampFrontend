@@ -1,0 +1,177 @@
+/* ===========================
+Estilos del navbar
+==============================*/
+.navbar {
+    background-color: #353535;
+    height: 100%;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 999999999;
+  }
+  
+  .content-navbar {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .logo {
+    color: white;
+    border-left: 5px solid #fd4918;
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 5px;
+    text-transform: uppercase;
+    width: 80%;
+  }
+  
+  #hamburguer-btn {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  }
+  #hamburguer-btn span {
+    display: block;
+    background-color: white;
+    height: 5px;
+    margin-bottom: 5px;
+    width: 70%;
+  }
+  #hamburguer-btn span:last-child {
+    margin-bottom: 0;
+  }
+  
+  .main-nav {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .main-nav a {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .main-nav a:hover {
+    background-color: #fd4918;
+  }
+  
+  /*=======================================================
+  ESTILOS For small screen devices, like phones, held in 
+  landscape mode. 480px/30em
+  =========================================================*/
+  @media only screen and (min-width: 30em) {
+    .logo {
+      font-size: 25px;
+    }
+  
+    #hamburguer-btn {
+      padding-right: 10px;
+    }
+    #hamburguer-btn span {
+      height: 7px;
+      width: 50%;
+    }
+  
+    .main-nav a {
+      font-size: 18px;
+    }
+  }
+  /*=========================================================
+  ESTILOS Smaller tablets, like the Amazon Kindle (600×800) 
+  and Barnes & Noble Nook (600×1024), held in portrait mode. 
+  600px/37.5em
+  ===========================================================*/
+  @media only screen and (min-width: 37.5em) {
+    #hamburguer-btn span {
+      width: 40%;
+    }
+  
+    .main-nav a {
+      font-size: 20px;
+      padding: 10px 0;
+    }
+  }
+  /*=========================================================
+  ESTILOS Ten-inch tablets like the iPad (768×1024) held in
+  portrait mode. 768px/48em
+  ===========================================================*/
+  @media only screen and (min-width: 48em) {
+    .navbar {
+      padding: 25px;
+    }
+  
+    .logo {
+      font-size: 22px;
+      width: 35%;
+    }
+  
+    #hamburguer-btn {
+      display: none;
+    }
+  
+    .main-nav {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 0;
+      width: 60%;
+    }
+    .main-nav a {
+      font-size: 18px;
+      margin-bottom: 0;
+      padding: 10px;
+    }
+    .main-nav a:hover {
+      background-color: #fd4918;
+    }
+  }
+  /*=========================================================
+  ESTILOS Tablets like the iPad (1024×768) held in landscape
+  mode, as well as certain laptop, netbook, and desktop 
+  displays. 1024px/64em
+  ===========================================================*/
+  @media only screen and (min-width: 64em) {
+    .navbar {
+      padding: 25px;
+    }
+  
+    .logo {
+      font-size: 25px;
+    }
+  
+    .main-nav a {
+      font-size: 22px;
+    }
+  }
+  /*=========================================================
+  ESTILOS For widescreen displays, primarily laptop and
+  desktop browsers. 1200px/75em
+  ===========================================================*/
+  @media only screen and (min-width: 75em) {
+    .content-navbar {
+      justify-content: space-around;
+    }
+  
+    .logo {
+      font-size: 40px;
+    }
+  
+    .main-nav {
+      margin-right: 0;
+      width: 40%;
+    }
+    .main-nav a {
+      padding: 20px;
+      font-size: 25px;
+    }
+  }

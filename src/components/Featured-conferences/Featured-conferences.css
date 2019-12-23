@@ -1,0 +1,152 @@
+/* ===========================
+Estilos de featured conferences
+==============================*/
+.featured-conferences {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+  }
+  
+  .bg-featured-conferences {
+    background-image: url(./images/tech.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: inherit;
+    position: absolute;
+    width: inherit;
+  }
+  
+  .featured-conferences-content {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: center;
+    margin: 5vh 0;
+    position: relative;
+    width: 92%;
+  }
+  .featured-conferences-content h2 {
+    font-size: 25px;
+    margin-bottom: 4vh;
+    text-align: center;
+    text-transform: uppercase;
+    width: 95%;
+  }
+  
+  .featured-conferences-nav {
+    align-items: center;
+    border-bottom: 3px solid #fd4918;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4vh;
+    padding-bottom: 1vh;
+    width: 95%;
+  }
+  .featured-conferences-nav a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 2vh;
+  }
+  .featured-conferences-nav a i {
+    color: #fd4918;
+  }
+  
+  .conference {
+    text-align: center;
+  }
+  .conference ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  .conference ul li {
+    margin: 1vh 0;
+  }
+  .conference ul li i {
+    margin-right: 10px;
+    color: #fd4918;
+  }
+  .conference hr {
+    background-color: black;
+    height: 3px;
+    margin: 2vh 0;
+  }
+  .conference .more-information-button {
+    border: 3px solid #fd4918;
+    color: #fd4918;
+    display: inline-block;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 2vh;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  #conference2 {
+    display: none;
+  }
+  
+  #conference3 {
+    display: none;
+  }
+  
+  /*=======================================================
+  ESTILOS For small screen devices, like phones, held in 
+  landscape mode. 480px/30em
+  =========================================================*/
+  @media only screen and (min-width: 30em) {
+    .featured-conferences-nav {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .conference ul li {
+      font-size: 20px;
+    }
+    .conference .more-information-button {
+      margin-top: 5vh;
+    }
+  }
+  /*=========================================================
+  ESTILOS Smaller tablets, like the Amazon Kindle (600×800) 
+  and Barnes & Noble Nook (600×1024), held in portrait mode. 
+  600px/37.5em
+  ===========================================================*/
+  @media only screen and (min-width: 37.5em) {
+    .conference ul li {
+      font-size: 22px;
+    }
+  }
+  /*=========================================================
+  ESTILOS Ten-inch tablets like the iPad (768×1024) held in
+  portrait mode. 768px/48em
+  ===========================================================*/
+  @media only screen and (min-width: 48em) {
+    .featured-conferences-content {
+      width: 80%;
+    }
+  }
+  /*=========================================================
+  ESTILOS Tablets like the iPad (1024×768) held in landscape
+  mode, as well as certain laptop, netbook, and desktop 
+  displays. 1024px/64em
+  ===========================================================*/
+  /*=========================================================
+  ESTILOS For widescreen displays, primarily laptop and
+  desktop browsers. 1200px/75em
+  ===========================================================*/
+  @media only screen and (min-width: 75em) {
+    .featured-conferences-content {
+      margin: 6vh 0;
+      width: 40%;
+    }
+  }
